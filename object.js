@@ -11,3 +11,18 @@ const displayCarInformation = (carInformation) => {
 };
 
 displayCarInformation(carInformation);
+
+// 17. Merge two objects:
+//     ```javascript
+//     let obj1 = { a: 1, b: 2 };
+//     let obj2 = { b: 3, c: 4 };
+//     ```
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { b: 3, c: 4 };
+
+const mergeTwoObject = (obj1, obj2) => {
+  return { ...obj1, ...obj2 };
+};
+
+console.log(mergeTwoObject(obj1, obj2));
