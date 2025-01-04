@@ -44,3 +44,9 @@ const vowelsCounter = (string) => {
 console.log(vowelsCounter("Beautiful Day"));  //6
 console.log(vowelsCounter("wonderful Day"));  //4
 console.log(vowelsCounter(""));               //0
+
+// 15. Use `trim` to clean up the string `"   Too much space!   "`.
+
+const cleanUpSpace = string => string.trim();
+console.log(cleanUpSpace("   Too much space!   "));
+
