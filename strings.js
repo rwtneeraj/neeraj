@@ -27,3 +27,20 @@ const replaceAllOccurence = (string,target,replacement) => {
 
 console.log(replaceAllOccurence("foofoofoo", "foo", "bar"));  //barbarbar
 console.log(replaceAllOccurence("foofoofoo", "foo", ""));    //""
+
+// 14. Count the number of vowels in the string `"Beautiful Day"`.
+
+const vowelsCounter = (string) => {
+  const vowels = "AEIOUaeiou";
+  let count = 0;
+
+  for (let index = 0; index < string.length; index++) {
+    count += vowels.includes(string[index]) ? 1 : 0;
+  }
+
+  return count;
+};
+
+console.log(vowelsCounter("Beautiful Day"));  //6
+console.log(vowelsCounter("wonderful Day"));  //4
+console.log(vowelsCounter(""));               //0
