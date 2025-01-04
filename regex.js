@@ -25,7 +25,7 @@ const testRegexForUSPhoneNoFormat = function () {
   console.log(regexForUSPhoneNoFormat.test("(123) 4567890"));   //false
 }
 
-testRegexForUSPhoneNoFormat();
+// testRegexForUSPhoneNoFormat();
 
 
 // 3. Extract all the numbers from the string `"abc123def456ghi789"`.
@@ -39,4 +39,18 @@ const testRegexForExtractNumbers = function () {
   console.log(("a5").match(regexForExtractNumbers)); 
 };
 
-testRegexForExtractNumbers();
+// testRegexForExtractNumbers();
+
+
+// 4. Validate if a string starts with `"Hello"` and ends with `"World!"`.
+
+const regexForStringStartWithHelloAndEndWorld = /^hello.*world$/; 
+
+const testRegexForStringStartWithHelloAndEndWworld = function () {
+  console.log(regexForStringStartWithHelloAndEndWorld.test("hello  world"));
+  console.log(regexForStringStartWithHelloAndEndWorld.test("helloworld1"));
+}
+
+testRegexForStringStartWithHelloAndEndWworld();
+
+// 5. Write a regex to find duplicate words in the string: `"This is is a test test string."`.
