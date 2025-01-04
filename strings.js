@@ -17,3 +17,13 @@ const containsAlphanumeric = (string) => {
 
 console.log(containsAlphanumeric("56kk22"));
 console.log(containsAlphanumeric("javaScript"));
+
+
+// 13. Replace all occurrences of `"foo"` with `"bar"` in `"foofoofoo"`.
+
+const replaceAllOccurence = (string,target,replacement) => {
+  return string.replaceAll(target, replacement);
+};
+
+console.log(replaceAllOccurence("foofoofoo", "foo", "bar"));  //barbarbar
+console.log(replaceAllOccurence("foofoofoo", "foo", ""));    //""
