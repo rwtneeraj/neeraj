@@ -30,7 +30,7 @@ const testRegexForUSPhoneNoFormat = function () {
 
 // 3. Extract all the numbers from the string `"abc123def456ghi789"`.
 
-const regexForExtractNumbers = /[^\d]+/g;
+const regexForExtractNumbers = /[\d]+/g;
 
 const testRegexForExtractNumbers = function () {
   console.log(("abc123def456ghi789").match(regexForExtractNumbers)); 
@@ -39,7 +39,7 @@ const testRegexForExtractNumbers = function () {
   console.log(("a5").match(regexForExtractNumbers)); 
 };
 
-// testRegexForExtractNumbers();
+testRegexForExtractNumbers();
 
 
 // 4. Validate if a string starts with `"Hello"` and ends with `"World!"`.
