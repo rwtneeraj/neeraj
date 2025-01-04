@@ -50,3 +50,13 @@ const sortedArrayOfStrings = (array) => {
 
 console.log(sortedArrayOfStrings(["apple", "grapes", "banana", "pineapple"]));
 console.log(sortedArrayOfStrings(["apple", "gas", "b", "pineapple"]));
+
+// 10. Use `map` to create an array of the square roots of `[1, 4, 9, 16, 25]`.
+
+const squareRooot = (numbers) => {
+  return numbers.map((number) => number ** 0.5);
+};
+
+console.log(squareRooot([1, 4, 9, 16, 25]))
+
+
