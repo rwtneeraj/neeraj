@@ -6,11 +6,11 @@ const carInformation = {
   year: 2022,
 };
 
-const displayCarInformation = (carInformation) => {
-  console.log(carInformation);
+const displayObjectInfo = (obj) => {
+  console.log(obj);
 };
 
-displayCarInformation(carInformation);
+displayObjectInfo(carInformation);
 
 // 17. Merge two objects:
 //     ```javascript
@@ -44,4 +44,16 @@ console.log(occurrencesOfEachChar("hello"));
 console.log(occurrencesOfEachChar("neeraj"));
 
 // 19. Dynamically add a property `color` to an object representing a fruit.x
+
+  
+const fruit = {
+  name : "orange",
+};
+
+const dynamicallyAddProperty = () => {
+  fruit.color = "orange";
+  return fruit;
+}
+
+console.log(dynamicallyAddProperty(fruit, "orange"));
 
