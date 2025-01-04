@@ -38,3 +38,15 @@ const extractAllPrimeNumber = (numbers) => {
 
 console.log(extractAllPrimeNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 console.log(extractAllPrimeNumber([2,5,7,9,4,6]));
+
+
+// 9. Sort an array of strings by their length.
+
+const sortedArrayOfStrings = (array) => {
+  return array.sort((a, b) => {
+    return a.length - b.length;
+ });
+};
+
+console.log(sortedArrayOfStrings(["apple", "grapes", "banana", "pineapple"]));
+console.log(sortedArrayOfStrings(["apple", "gas", "b", "pineapple"]));
