@@ -57,3 +57,12 @@ const dynamicallyAddProperty = () => {
 
 console.log(dynamicallyAddProperty(fruit, "orange"));
 
+// 20. Use `Object.keys` and `Object.values` to iterate over an object and log its keys and values.
+
+const iterateKeysAndValues = (obj) => {
+  const keys = Object.keys(obj);
+  const values = Object.values(obj);
+  console.log(`keys : "${keys}"    values : "${values}"`);
+}
+
+iterateKeysAndValues({ a: 1, b: 2, c: 3 });
