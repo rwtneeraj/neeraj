@@ -14,9 +14,9 @@ const cubeOfNumber = (number) => {
   return Math.pow(number, 3);
 };
 
-console.log(cubeOfNumber(2));
-console.log(cubeOfNumber(3));
-console.log(cubeOfNumber(4));
+// console.log(cubeOfNumber(2));
+// console.log(cubeOfNumber(3));
+// console.log(cubeOfNumber(4));
 
 // 23. Implement a closure to create a counter that increments by a given value.
 
@@ -29,6 +29,16 @@ const increament = function (value) {
 }
 
 const increamentBy2 = increament(2);
-console.log(increamentBy2());   //2
-console.log(increamentBy2());   //4
-console.log(increamentBy2());   //6
+// console.log(increamentBy2());   //2
+// console.log(increamentBy2());   //4
+// console.log(increamentBy2());   //6
+
+// 24. Write a function to find the maximum number in an array.
+
+const findMax = function (numbers) {
+  const max = Math.max(...numbers);
+  return max;
+};
+
+console.log(findMax([1, 2, 3, 4, 5]));
+console.log(findMax([1, 2, 3, 4, 5,44]));
