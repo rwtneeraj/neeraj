@@ -25,4 +25,23 @@ const mergeTwoObject = (obj1, obj2) => {
   return { ...obj1, ...obj2 };
 };
 
-console.log(mergeTwoObject(obj1, obj2));
+// console.log(mergeTwoObject(obj1, obj2));
+
+
+// 18. Write a function to count the occurrences of each character in a string and return the result as an object.
+const occurrencesOfEachChar = (string) => {
+  const obj = {};
+
+  for (let index = 0; index < string.length; index++) {
+    const char = string[index];
+    obj[char] = (Object.keys(obj)).includes(char) ? obj[char] + 1 : 1;
+  }
+ 
+  return obj;
+}
+
+console.log(occurrencesOfEachChar("hello"));
+console.log(occurrencesOfEachChar("neeraj"));
+
+// 19. Dynamically add a property `color` to an object representing a fruit.x
+
