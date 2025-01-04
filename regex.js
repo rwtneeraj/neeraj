@@ -26,3 +26,17 @@ const testRegexForUSPhoneNoFormat = function () {
 }
 
 testRegexForUSPhoneNoFormat();
+
+
+// 3. Extract all the numbers from the string `"abc123def456ghi789"`.
+
+const regexForExtractNumbers = /[^\d]+/g;
+
+const testRegexForExtractNumbers = function () {
+  console.log(("abc123def456ghi789").match(regexForExtractNumbers)); 
+  console.log(("5").match(regexForExtractNumbers)); 
+  console.log(("aa").match(regexForExtractNumbers)); 
+  console.log(("a5").match(regexForExtractNumbers)); 
+};
+
+testRegexForExtractNumbers();
