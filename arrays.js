@@ -16,4 +16,25 @@ const removeAllFalsyValue = (array) => array.filter((value) => value);
 
 console.log(removeAllFalsyValue([0, 1, false, 2, "", 3, null, 4, undefined]));
 console.log(removeAllFalsyValue([0, 1, false, 2, "", 3, 4, 5, NaN, 0]));
-console.log(removeAllFalsyValue(["NaN",NaN,"undefined",undefined]));
+console.log(removeAllFalsyValue(["NaN", NaN, "undefined", undefined]));
+
+// 8. Use `filter` to extract all prime numbers from `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+
+const isPrime = (number) => {
+  const end = Math.ceil(number / 2);
+  let factor = 2;
+
+  while (factor <= end) {
+    if (number % factor === 0) return false;
+    factor++;
+  }
+
+  return number >= 2;
+}
+
+const extractAllPrimeNumber = (numbers) => {
+  return numbers.filter((num) => !isPrime(num));
+}
+
+console.log(extractAllPrimeNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(extractAllPrimeNumber([2,5,7,9,4,6]));
