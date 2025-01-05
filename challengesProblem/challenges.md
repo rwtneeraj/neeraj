@@ -95,7 +95,7 @@ sortByNestedProperty(data, "a.b.c");
 //   { a: { b: { c: 1 } } },
 //   { a: { b: { c: 2 } } },
 //   { a: { b: { c: 3 } } }
-]
+// ]
 ```
 
 **Question:**

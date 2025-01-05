@@ -38,16 +38,41 @@ const wordFrequency = function (string) {
 console.log(wordFrequency("hello world hello"));
 console.log(wordFrequency("one fish two fish red fish blue fish"));
 
-// Write a function `findMatchingIndex` that takes an array of integers and returns an array of indices where the value at the index matches the index itself.
+// Write a function `findMatchingIndex` that takes an array of integers and 
+// returns an array of indices where the value at the index matches the index itself.
 // - `findMatchingIndex([0, 2, 2, 3])` → `[0, 3]`
 //   - `findMatchingIndex([1, 1, 2, 4])` → `[2]`;
 
 // How will you check for matching indices?
-// we can use filter for check indices matchs value at same index by equility `(===)` inside the reducer function.
+// we can use filter for check indices matchs value at same index by equility 
+// `(===)` inside the reducer function.
 
 const findMatchingIndex = function (array){
   return array.filter((element, index) => element === index);
 };
 
 console.log(findMatchingIndex([0, 2, 2, 3]))
-console.log(findMatchingIndex([1, 1, 2, 4]))
+console.log(findMatchingIndex([1, 1, 2, 4]));
+
+
+// Create a function `sortByNestedProperty` that takes an array of objects and 
+// a property path string (e.g., "a.b.c") and returns the array sorted by the 
+// specified property.
+
+// How will you dynamically access nested properties and sort the array?
+// object nested properties can access by this way "Obj.a.b.c" . we need value to
+//  sort in ascending order the each objects in array. we can implement sort method.
+
+const data = [
+  { a: { b: { c: 3 } } },
+  { a: { b: { c: 1 } } },
+  { a: { b: { c: 2 } } }
+];
+
+const sortByNestedProperty = function (data) {
+  return data.sort((value1, value2) => {
+    return value1.a.b.c - value2.a.b.c;
+  })
+};
+
+console.log(sortByNestedProperty(data));
