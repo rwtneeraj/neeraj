@@ -38,3 +38,16 @@ const wordFrequency = function (string) {
 console.log(wordFrequency("hello world hello"));
 console.log(wordFrequency("one fish two fish red fish blue fish"));
 
+// Write a function `findMatchingIndex` that takes an array of integers and returns an array of indices where the value at the index matches the index itself.
+// - `findMatchingIndex([0, 2, 2, 3])` → `[0, 3]`
+//   - `findMatchingIndex([1, 1, 2, 4])` → `[2]`;
+
+// How will you check for matching indices?
+// we can use filter for check indices matchs value at same index by equility `(===)` inside the reducer function.
+
+const findMatchingIndex = function (array){
+  return array.filter((element, index) => element === index);
+};
+
+console.log(findMatchingIndex([0, 2, 2, 3]))
+console.log(findMatchingIndex([1, 1, 2, 4]))
