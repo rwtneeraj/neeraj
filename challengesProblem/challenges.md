@@ -15,7 +15,6 @@ Create a function `mysteryOperation` that takes an array of integers and returns
 What logic will you use to implement this function?
 ans : 
 
-
 ---
 
 ## Challenge 2: String Pattern Validator
